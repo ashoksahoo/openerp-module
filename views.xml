@@ -1,22 +1,35 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <openerp>
-    <data>
-
-        <record model="hello.hello" id="hello_hello_name">
-            <field name="name">Sales</field>
-        </record>
-        <record model="idea.category" id="idea_category_general">
-            <field name="name">Organization</field>
-        </record>
-        <record model="idea.category" id="idea_category_technical">
-            <field name="name">Technical</field>
-        </record>
-
-        <record id="base.user_demo" model="res.users">
-            <field name="groups_id" eval="[(4,ref('base.group_tool_user'))]"/>
-        </record>
-
-    </data>
+<data>
+<record model="ir.ui.view" id="ashok_tree_view">
+<field name="name">ashok.tree</field>
+<field name="model">ashok</field>
+<field name="type">tree</field>
+<field name="arch" type="xml">
+<tree string="Ashok">
+<field name="title"/>
+<field name="note"/>
+<field name="note_date"/>
+</tree>
+</field>
+</record>
+<record model="ir.ui.view" id="ashok_form_view">
+<field name="name">ashok.form</field>
+<field name="model">ashok</field>
+<field name="type">form</field>
+<field name="arch" type="xml">
+<form string="Ashok">
+<field name="title"/>
+<field name="note"/>
+<field name="note_date"/>
+</form>
+</field>
+</record>
+<record model="ir.actions.act_window" id="action_ashok_form">
+<field name="name">ashok</field>
+<field name="res_model">ashok</field>
+</record>
+<menuitem name="Ashok" icon="terp-project" id="ashok_menu"/>
+<menuitem name="Notes" parent="ashok_menu" id="ashok_menu_mainform" action="action_ashok_form"/>
+</data>
 </openerp>
-
-
