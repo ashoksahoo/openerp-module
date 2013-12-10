@@ -6,9 +6,9 @@ class ashok(osv.osv):
 	_name = 'ashok'
 	_description = "Hello from OpenERP"
 	_columns = {
-	'title' : fields.char('Title', size=30, required=True),
-	'note' : fields.text('Note'),
-	'note_date' : fields.date('Date'),
+		'title' : fields.char('Title', size=30, required=True),
+		'note' : fields.text('Note'),
+		'note_date' : fields.date('Date'),
 	}
-	ashok()
+ashok()
 	

@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-<data>
-<record model="ir.ui.view" id="ashok_tree_view">
-<field name="name">ashok.tree</field>
-<field name="model">ashok</field>
-<field name="type">tree</field>
-<field name="arch" type="xml">
-<tree string="Ashok">
-<field name="title"/>
-<field name="note"/>
-<field name="note_date"/>
-</tree>
-</field>
-</record>
+<data >
 <record model="ir.ui.view" id="ashok_form_view">
 <field name="name">ashok.form</field>
 <field name="model">ashok</field>
 <field name="type">form</field>
 <field name="arch" type="xml">
-<form string="Ashok">
+<form string="Ashok" version='7.0'>
 <field name="title"/>
 <field name="note"/>
 <field name="note_date"/>
